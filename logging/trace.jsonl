@@ -1,550 +1,550 @@
-{"timestamp": "2026-08-05T15:52:42.640994", "case_id": "EC_004", "step": "investigation_started", "claimed_order_id": "5d9c5817e278892b7498d90bfa28ade8"}
-{"timestamp": "2026-08-05T15:52:42.641009", "case_id": "EC_004", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:52:42.645518", "case_id": "EC_002", "step": "investigation_started", "claimed_order_id": "eb09635680fadffb33358e40b05c9029"}
-{"timestamp": "2026-08-05T15:52:42.645526", "case_id": "EC_002", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:52:42.646144", "case_id": "EC_001", "step": "investigation_started", "claimed_order_id": "9b75cdaf2d85857ef023980e15d01546"}
-{"timestamp": "2026-08-05T15:52:42.646149", "case_id": "EC_001", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:52:42.649022", "case_id": "EC_003", "step": "investigation_started", "claimed_order_id": "6c1798a95735e69db81fe92f8c40bdb4"}
-{"timestamp": "2026-08-05T15:52:42.649027", "case_id": "EC_003", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:52:42.662287", "case_id": "EC_005", "step": "investigation_started", "claimed_order_id": "3a20bcc250e5404ca717dfa90e8a9c05"}
-{"timestamp": "2026-08-05T15:52:42.662294", "case_id": "EC_005", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:52:44.410613", "case_id": "EC_005", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:45.065007", "case_id": "EC_003", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:45.065043", "case_id": "EC_001", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:45.424400", "case_id": "EC_003", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:45.432003", "case_id": "EC_004", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:45.701441", "case_id": "EC_001", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:46.041596", "case_id": "EC_005", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:46.348449", "case_id": "EC_003", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:46.376831", "case_id": "EC_004", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:46.379249", "case_id": "EC_004", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:46.379286", "case_id": "EC_002", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:47.518709", "case_id": "EC_002", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:47.522662", "case_id": "EC_002", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:47.526704", "case_id": "EC_003", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:47.526766", "case_id": "EC_001", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:47.527258", "case_id": "EC_003", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:52:49.768325", "case_id": "EC_001", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:49.768780", "case_id": "EC_001", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:52:50.181234", "case_id": "EC_004", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:50.181609", "case_id": "EC_004", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:52:51.026378", "case_id": "EC_005", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:51.554857", "case_id": "EC_002", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:51.555276", "case_id": "EC_002", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:52:51.706452", "case_id": "EC_005", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:52:51.707469", "case_id": "EC_005", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:52:52.994150", "case_id": "EC_001", "step": "policy_evaluated", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:52:52.994168", "case_id": "EC_001", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:52:56.428091", "case_id": "EC_004", "step": "policy_evaluated", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 290.16, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:52:56.428109", "case_id": "EC_004", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:52:57.388195", "case_id": "EC_005", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 32.75, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:52:57.388210", "case_id": "EC_005", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:52:57.754528", "case_id": "EC_003", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 32.22, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:52:57.754544", "case_id": "EC_003", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:52:58.565839", "case_id": "EC_002", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 18.27, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:52:58.565857", "case_id": "EC_002", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:02.861120", "case_id": "EC_001", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:02.861129", "case_id": "EC_001", "step": "investigation_completed", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0}
-{"timestamp": "2026-08-05T15:53:02.878299", "case_id": "EC_006", "step": "investigation_started", "claimed_order_id": "0e4a4de1d15b6df8d4335fb2db61667a"}
-{"timestamp": "2026-08-05T15:53:02.878306", "case_id": "EC_006", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:53:04.140369", "case_id": "EC_006", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:04.935505", "case_id": "EC_006", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:05.932894", "case_id": "EC_006", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:07.276109", "case_id": "EC_006", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:07.276536", "case_id": "EC_006", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:09.030387", "case_id": "EC_005", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:09.030396", "case_id": "EC_005", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 32.75}
-{"timestamp": "2026-08-05T15:53:09.045135", "case_id": "EC_007", "step": "investigation_started", "claimed_order_id": "cf788ee4258fde5130bb5651bda63918"}
-{"timestamp": "2026-08-05T15:53:09.045142", "case_id": "EC_007", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:53:09.246585", "case_id": "EC_004", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:09.246593", "case_id": "EC_004", "step": "investigation_completed", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 290.16}
-{"timestamp": "2026-08-05T15:53:09.266578", "case_id": "EC_008", "step": "investigation_started", "claimed_order_id": "23c312ca9f0242a48a95e5643bee2645"}
-{"timestamp": "2026-08-05T15:53:09.266586", "case_id": "EC_008", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:53:11.022126", "case_id": "EC_008", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:11.457092", "case_id": "EC_007", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:12.167506", "case_id": "EC_007", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:12.200853", "case_id": "EC_002", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:12.200861", "case_id": "EC_002", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 18.27}
-{"timestamp": "2026-08-05T15:53:12.219202", "case_id": "EC_009", "step": "investigation_started", "claimed_order_id": "6683aa4f73f7869ec65ebeeef53f700b"}
-{"timestamp": "2026-08-05T15:53:12.219210", "case_id": "EC_009", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:53:12.871338", "case_id": "EC_003", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:12.871346", "case_id": "EC_003", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 32.22}
-{"timestamp": "2026-08-05T15:53:12.885417", "case_id": "EC_010", "step": "investigation_started", "claimed_order_id": "919baca007d9525b6668c18f79a33197"}
-{"timestamp": "2026-08-05T15:53:12.885425", "case_id": "EC_010", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:53:13.582338", "case_id": "EC_009", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:13.955054", "case_id": "EC_007", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:14.042486", "case_id": "EC_008", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:14.234494", "case_id": "EC_006", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 60.4, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:14.234509", "case_id": "EC_006", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:14.933985", "case_id": "EC_009", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:15.032465", "case_id": "EC_008", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:16.095013", "case_id": "EC_009", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:17.322448", "case_id": "EC_007", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:17.322803", "case_id": "EC_007", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:17.826279", "case_id": "EC_010", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:18.173602", "case_id": "EC_009", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:18.174047", "case_id": "EC_009", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:18.448914", "case_id": "EC_008", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:18.449297", "case_id": "EC_008", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:18.885438", "case_id": "EC_010", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:20.661721", "case_id": "EC_010", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:21.842779", "case_id": "EC_010", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:21.843219", "case_id": "EC_010", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:23.149279", "case_id": "EC_009", "step": "policy_evaluated", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 144.3, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:23.149296", "case_id": "EC_009", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:25.832014", "case_id": "EC_007", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 44.13, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:25.832028", "case_id": "EC_007", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:26.431951", "case_id": "EC_008", "step": "policy_evaluated", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:26.431966", "case_id": "EC_008", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:27.045415", "case_id": "EC_006", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:27.045424", "case_id": "EC_006", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 60.4}
-{"timestamp": "2026-08-05T15:53:27.062263", "case_id": "EC_011", "step": "investigation_started", "claimed_order_id": "113e41a438f06ffae6d1857e01d60c45"}
-{"timestamp": "2026-08-05T15:53:27.062270", "case_id": "EC_011", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:53:28.506273", "case_id": "EC_011", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:29.709586", "case_id": "EC_011", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:30.181768", "case_id": "EC_010", "step": "policy_evaluated", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:30.181784", "case_id": "EC_010", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:32.444883", "case_id": "EC_011", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:32.831514", "case_id": "EC_011", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:32.831881", "case_id": "EC_011", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:36.146133", "case_id": "EC_009", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:36.146142", "case_id": "EC_009", "step": "investigation_completed", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 144.3}
-{"timestamp": "2026-08-05T15:53:36.162425", "case_id": "EC_012", "step": "investigation_started", "claimed_order_id": "73628c6d02ed8f6134d9752cd7b83c2a"}
-{"timestamp": "2026-08-05T15:53:36.162432", "case_id": "EC_012", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:53:37.626803", "case_id": "EC_012", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:37.837885", "case_id": "EC_012", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:38.727157", "case_id": "EC_007", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:38.727165", "case_id": "EC_007", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 44.13}
-{"timestamp": "2026-08-05T15:53:38.741339", "case_id": "EC_013", "step": "investigation_started", "claimed_order_id": "97e8d3eb8f48e3610beed991e5f32296"}
-{"timestamp": "2026-08-05T15:53:38.741348", "case_id": "EC_013", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:53:38.895846", "case_id": "EC_008", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:38.895855", "case_id": "EC_008", "step": "investigation_completed", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0}
-{"timestamp": "2026-08-05T15:53:38.913648", "case_id": "EC_014", "step": "investigation_started", "claimed_order_id": "f938fa004452c776198a593e5fb9056d"}
-{"timestamp": "2026-08-05T15:53:38.913657", "case_id": "EC_014", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:53:39.286148", "case_id": "EC_010", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:39.286156", "case_id": "EC_010", "step": "investigation_completed", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0}
-{"timestamp": "2026-08-05T15:53:39.312054", "case_id": "EC_015", "step": "investigation_started", "claimed_order_id": "ccec592b58e122dc2bfc2305152d9603"}
-{"timestamp": "2026-08-05T15:53:39.312061", "case_id": "EC_015", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:53:40.239558", "case_id": "EC_012", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:40.951885", "case_id": "EC_011", "step": "policy_evaluated", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 127.12, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:40.951900", "case_id": "EC_011", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:41.198788", "case_id": "EC_014", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:41.198819", "case_id": "EC_015", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:41.243073", "case_id": "EC_013", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:41.819469", "case_id": "EC_015", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:42.461892", "case_id": "EC_014", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:42.590308", "case_id": "EC_012", "step": "domain_agent_completed", "domain": "payment", "finding": "mismatch", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:42.590700", "case_id": "EC_012", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:42.642738", "case_id": "EC_013", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:42.756613", "case_id": "EC_013", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:42.964464", "case_id": "EC_013", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:42.964926", "case_id": "EC_013", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:43.242242", "case_id": "EC_014", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:43.418065", "case_id": "EC_015", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:43.419985", "case_id": "EC_014", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:43.420468", "case_id": "EC_014", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:44.847380", "case_id": "EC_015", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:44.847861", "case_id": "EC_015", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:47.499507", "case_id": "EC_012", "step": "policy_evaluated", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 226.23, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:47.499521", "case_id": "EC_012", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:49.142180", "case_id": "EC_013", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 48.14, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:49.142194", "case_id": "EC_013", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:49.954905", "case_id": "EC_015", "step": "policy_evaluated", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:49.954920", "case_id": "EC_015", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:49.962428", "case_id": "EC_014", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 50.37, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:49.962443", "case_id": "EC_014", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:50.718766", "case_id": "EC_011", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:50.718776", "case_id": "EC_011", "step": "investigation_completed", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 127.12}
-{"timestamp": "2026-08-05T15:53:50.734241", "case_id": "EC_016", "step": "investigation_started", "claimed_order_id": "9c9353e8fd52f68f8442e580b5f2bba6"}
-{"timestamp": "2026-08-05T15:53:50.734249", "case_id": "EC_016", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:53:53.067037", "case_id": "EC_016", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:54.679645", "case_id": "EC_016", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:55.620263", "case_id": "EC_016", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:56.370678", "case_id": "EC_016", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:56.371195", "case_id": "EC_016", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:53:56.454326", "case_id": "EC_012", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:56.454336", "case_id": "EC_012", "step": "investigation_completed", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 226.23}
-{"timestamp": "2026-08-05T15:53:56.473304", "case_id": "EC_017", "step": "investigation_started", "claimed_order_id": "3c5939ce763419f5942f27acffd072e6"}
-{"timestamp": "2026-08-05T15:53:56.473312", "case_id": "EC_017", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:53:58.989395", "case_id": "EC_017", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:59.002261", "case_id": "EC_017", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:53:59.653067", "case_id": "EC_013", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:59.653075", "case_id": "EC_013", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 48.14}
-{"timestamp": "2026-08-05T15:53:59.670689", "case_id": "EC_018", "step": "investigation_started", "claimed_order_id": "f396e1280028fa9c8c83111abee5f2e9"}
-{"timestamp": "2026-08-05T15:53:59.670700", "case_id": "EC_018", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:53:59.748828", "case_id": "EC_015", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:53:59.748839", "case_id": "EC_015", "step": "investigation_completed", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0}
-{"timestamp": "2026-08-05T15:53:59.769920", "case_id": "EC_019", "step": "investigation_started", "claimed_order_id": "a4e90af1c84c4455c7c4c65293ae2c78"}
-{"timestamp": "2026-08-05T15:53:59.769928", "case_id": "EC_019", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:53:59.906817", "case_id": "EC_017", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:01.018846", "case_id": "EC_017", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:01.019261", "case_id": "EC_017", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:01.124810", "case_id": "EC_016", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 18.15, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:01.124827", "case_id": "EC_016", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:01.294337", "case_id": "EC_018", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:01.315228", "case_id": "EC_014", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:01.315239", "case_id": "EC_014", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 50.37}
-{"timestamp": "2026-08-05T15:54:01.334078", "case_id": "EC_020", "step": "investigation_started", "claimed_order_id": "4f3f48cbedce0c316c688af6fc7e9c56"}
-{"timestamp": "2026-08-05T15:54:01.334085", "case_id": "EC_020", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:54:01.482515", "case_id": "EC_019", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:02.631206", "case_id": "EC_020", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:02.990759", "case_id": "EC_018", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:03.364589", "case_id": "EC_018", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:03.391697", "case_id": "EC_019", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:03.592479", "case_id": "EC_018", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:03.593170", "case_id": "EC_018", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:03.662892", "case_id": "EC_020", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:03.754384", "case_id": "EC_019", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:04.273212", "case_id": "EC_020", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:04.747989", "case_id": "EC_019", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:04.748460", "case_id": "EC_019", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:06.071984", "case_id": "EC_020", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:06.072532", "case_id": "EC_020", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:08.714085", "case_id": "EC_018", "step": "policy_evaluated", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:08.714101", "case_id": "EC_018", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:08.926554", "case_id": "EC_017", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 48.54, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:08.926571", "case_id": "EC_017", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:10.578981", "case_id": "EC_016", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:10.578990", "case_id": "EC_016", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 18.15}
-{"timestamp": "2026-08-05T15:54:10.595564", "case_id": "EC_021", "step": "investigation_started", "claimed_order_id": "cc8778d76e567b45082b7f52bce23095"}
-{"timestamp": "2026-08-05T15:54:10.595572", "case_id": "EC_021", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:54:11.386987", "case_id": "EC_019", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 23.48, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:11.387011", "case_id": "EC_019", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:12.302710", "case_id": "EC_021", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:13.243565", "case_id": "EC_021", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:14.463115", "case_id": "EC_020", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 68.64, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:14.463132", "case_id": "EC_020", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:15.062727", "case_id": "EC_021", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:18.088468", "case_id": "EC_021", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:18.088855", "case_id": "EC_021", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:18.627682", "case_id": "EC_017", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:18.627691", "case_id": "EC_017", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 48.54}
-{"timestamp": "2026-08-05T15:54:18.645538", "case_id": "EC_022", "step": "investigation_started", "claimed_order_id": "ca0400dec2c292340c373e63b1c2c597"}
-{"timestamp": "2026-08-05T15:54:18.645546", "case_id": "EC_022", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:54:19.025983", "case_id": "EC_018", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:19.025994", "case_id": "EC_018", "step": "investigation_completed", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0}
-{"timestamp": "2026-08-05T15:54:19.046296", "case_id": "EC_023", "step": "investigation_started", "claimed_order_id": "9d0516ad96d793d308cec3c5929ed649"}
-{"timestamp": "2026-08-05T15:54:19.046306", "case_id": "EC_023", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:54:19.979754", "case_id": "EC_022", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:20.379595", "case_id": "EC_023", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:20.949348", "case_id": "EC_019", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:20.949357", "case_id": "EC_019", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 23.48}
-{"timestamp": "2026-08-05T15:54:20.971118", "case_id": "EC_024", "step": "investigation_started", "claimed_order_id": "6560fb10610771449cb0463c5ba12199"}
-{"timestamp": "2026-08-05T15:54:20.971126", "case_id": "EC_024", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:54:21.732909", "case_id": "EC_022", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:21.734089", "case_id": "EC_022", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:21.734920", "case_id": "EC_023", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:22.487352", "case_id": "EC_022", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:22.487745", "case_id": "EC_022", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:22.629590", "case_id": "EC_024", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:23.643582", "case_id": "EC_024", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:23.647785", "case_id": "EC_024", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:24.462443", "case_id": "EC_024", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:24.462821", "case_id": "EC_024", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:24.554090", "case_id": "EC_023", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:24.881942", "case_id": "EC_020", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:24.881950", "case_id": "EC_020", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 68.64}
-{"timestamp": "2026-08-05T15:54:24.897326", "case_id": "EC_025", "step": "investigation_started", "claimed_order_id": "4cf6a6de996beb9d4b190c7983be98d9"}
-{"timestamp": "2026-08-05T15:54:24.897334", "case_id": "EC_025", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:54:25.118136", "case_id": "EC_021", "step": "policy_evaluated", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:25.118151", "case_id": "EC_021", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:25.467446", "case_id": "EC_023", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:25.467862", "case_id": "EC_023", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:26.306666", "case_id": "EC_025", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:27.233937", "case_id": "EC_022", "step": "policy_evaluated", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:27.233951", "case_id": "EC_022", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:27.883247", "case_id": "EC_025", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:28.112884", "case_id": "EC_025", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:29.129992", "case_id": "EC_025", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:29.130413", "case_id": "EC_025", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:29.843486", "case_id": "EC_023", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 101.0, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:29.843508", "case_id": "EC_023", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:31.439989", "case_id": "EC_024", "step": "policy_evaluated", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 333.62, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:31.440009", "case_id": "EC_024", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:36.778486", "case_id": "EC_025", "step": "policy_evaluated", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:36.778509", "case_id": "EC_025", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:37.687791", "case_id": "EC_021", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:37.687802", "case_id": "EC_021", "step": "investigation_completed", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0}
-{"timestamp": "2026-08-05T15:54:37.708796", "case_id": "EC_026", "step": "investigation_started", "claimed_order_id": "9b4fc5c379134e1329bd48641ba285e3"}
-{"timestamp": "2026-08-05T15:54:37.708807", "case_id": "EC_026", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:54:38.118476", "case_id": "EC_022", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:38.118488", "case_id": "EC_022", "step": "investigation_completed", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0}
-{"timestamp": "2026-08-05T15:54:38.142998", "case_id": "EC_027", "step": "investigation_started", "claimed_order_id": "9a71f055d972d1ebacec9df7376ff1e3"}
-{"timestamp": "2026-08-05T15:54:38.143006", "case_id": "EC_027", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:54:39.122860", "case_id": "EC_026", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:39.614444", "case_id": "EC_027", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:40.138831", "case_id": "EC_026", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:40.248431", "case_id": "EC_026", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:40.338968", "case_id": "EC_026", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:40.339422", "case_id": "EC_026", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:40.429196", "case_id": "EC_024", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:40.429206", "case_id": "EC_024", "step": "investigation_completed", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 333.62}
-{"timestamp": "2026-08-05T15:54:40.449778", "case_id": "EC_028", "step": "investigation_started", "claimed_order_id": "1118f05e23d1a8082fa47f8a377de658"}
-{"timestamp": "2026-08-05T15:54:40.449787", "case_id": "EC_028", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:54:40.518876", "case_id": "EC_027", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:40.718349", "case_id": "EC_023", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:40.718366", "case_id": "EC_023", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 101.0}
-{"timestamp": "2026-08-05T15:54:40.744927", "case_id": "EC_029", "step": "investigation_started", "claimed_order_id": "b69321fb7d3000994c5a2b55c4f3cb01"}
-{"timestamp": "2026-08-05T15:54:40.744941", "case_id": "EC_029", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:54:41.217245", "case_id": "EC_027", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:42.116305", "case_id": "EC_028", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:42.335876", "case_id": "EC_029", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:42.540408", "case_id": "EC_027", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:42.540918", "case_id": "EC_027", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:42.566071", "case_id": "EC_028", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:43.301035", "case_id": "EC_029", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:43.925316", "case_id": "EC_028", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:44.167594", "case_id": "EC_029", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:44.554876", "case_id": "EC_028", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:44.555327", "case_id": "EC_028", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:45.527408", "case_id": "EC_029", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:45.527827", "case_id": "EC_029", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:48.499925", "case_id": "EC_027", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 30.38, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:48.499941", "case_id": "EC_027", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:49.914993", "case_id": "EC_026", "step": "policy_evaluated", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 670.04, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:49.915011", "case_id": "EC_026", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:50.452409", "case_id": "EC_028", "step": "policy_evaluated", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 242.62, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:50.452428", "case_id": "EC_028", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:51.678210", "case_id": "EC_025", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:51.678221", "case_id": "EC_025", "step": "investigation_completed", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0}
-{"timestamp": "2026-08-05T15:54:51.702183", "case_id": "EC_030", "step": "investigation_started", "claimed_order_id": "676e40056867189a1b3599f3e646f421"}
-{"timestamp": "2026-08-05T15:54:51.702194", "case_id": "EC_030", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:54:53.241689", "case_id": "EC_029", "step": "policy_evaluated", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:54:53.241705", "case_id": "EC_029", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:54:53.616411", "case_id": "EC_030", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:54.090317", "case_id": "EC_030", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:55.045029", "case_id": "EC_030", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:55.321199", "case_id": "EC_030", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:54:55.321867", "case_id": "EC_030", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:00.440470", "case_id": "EC_027", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:00.440484", "case_id": "EC_027", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 30.38}
-{"timestamp": "2026-08-05T15:55:00.458397", "case_id": "EC_031", "step": "investigation_started", "claimed_order_id": "72fa449394ed9dc9093819f93ca563af"}
-{"timestamp": "2026-08-05T15:55:00.458408", "case_id": "EC_031", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:55:01.976404", "case_id": "EC_030", "step": "policy_evaluated", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 81.48, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:01.976421", "case_id": "EC_030", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:02.633053", "case_id": "EC_026", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:02.633065", "case_id": "EC_026", "step": "investigation_completed", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 670.04}
-{"timestamp": "2026-08-05T15:55:02.652297", "case_id": "EC_031", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:02.660629", "case_id": "EC_032", "step": "investigation_started", "claimed_order_id": "d3782eb2976abf986175941c51364aab"}
-{"timestamp": "2026-08-05T15:55:02.660639", "case_id": "EC_032", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:55:03.024040", "case_id": "EC_031", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:03.381978", "case_id": "EC_028", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:03.381991", "case_id": "EC_028", "step": "investigation_completed", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 242.62}
-{"timestamp": "2026-08-05T15:55:03.403852", "case_id": "EC_033", "step": "investigation_started", "claimed_order_id": "edefc0fa09c98cc491e9d2cf95ee4a5f"}
-{"timestamp": "2026-08-05T15:55:03.403864", "case_id": "EC_033", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:55:04.589074", "case_id": "EC_031", "step": "domain_agent_completed", "domain": "payment", "finding": "mismatch", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:05.351572", "case_id": "EC_032", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:07.039712", "case_id": "EC_033", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:07.120992", "case_id": "EC_033", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:07.443824", "case_id": "EC_032", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:08.272236", "case_id": "EC_032", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:08.287290", "case_id": "EC_031", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:08.287768", "case_id": "EC_031", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:08.301141", "case_id": "EC_029", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:08.301153", "case_id": "EC_029", "step": "investigation_completed", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0}
-{"timestamp": "2026-08-05T15:55:08.316195", "case_id": "EC_034", "step": "investigation_started", "claimed_order_id": "b210c676cae65f95f7e08a49d195e1a1"}
-{"timestamp": "2026-08-05T15:55:08.316203", "case_id": "EC_034", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:55:08.905283", "case_id": "EC_032", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:08.905855", "case_id": "EC_032", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:09.580129", "case_id": "EC_033", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:09.793651", "case_id": "EC_034", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:10.790272", "case_id": "EC_034", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:11.322039", "case_id": "EC_033", "step": "domain_agent_completed", "domain": "payment", "finding": "mismatch", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:11.322580", "case_id": "EC_033", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:11.664689", "case_id": "EC_030", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:11.664699", "case_id": "EC_030", "step": "investigation_completed", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 81.48}
-{"timestamp": "2026-08-05T15:55:11.679282", "case_id": "EC_035", "step": "investigation_started", "claimed_order_id": "ae443cb420061bab1f2c5e3ad279fde8"}
-{"timestamp": "2026-08-05T15:55:11.679290", "case_id": "EC_035", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:55:11.782729", "case_id": "EC_034", "step": "domain_agent_completed", "domain": "payment", "finding": "mismatch", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:11.871070", "case_id": "EC_034", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:11.871558", "case_id": "EC_034", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:13.427430", "case_id": "EC_035", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:13.829230", "case_id": "EC_035", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:15.123303", "case_id": "EC_031", "step": "policy_evaluated", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 138.92, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:15.123317", "case_id": "EC_031", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:16.269430", "case_id": "EC_035", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:16.795429", "case_id": "EC_032", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 31.64, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:16.795445", "case_id": "EC_032", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:16.795656", "case_id": "EC_035", "step": "domain_agent_completed", "domain": "payment", "finding": "mismatch", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:16.796462", "case_id": "EC_035", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:20.747821", "case_id": "EC_033", "step": "policy_evaluated", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 35.96, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:20.747840", "case_id": "EC_033", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:21.165786", "case_id": "EC_034", "step": "policy_evaluated", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 85.14, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:21.165802", "case_id": "EC_034", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:24.230268", "case_id": "EC_031", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:24.230281", "case_id": "EC_031", "step": "investigation_completed", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 138.92}
-{"timestamp": "2026-08-05T15:55:24.252895", "case_id": "EC_036", "step": "investigation_started", "claimed_order_id": "201797d3f567dc70cc5732ecf055e346"}
-{"timestamp": "2026-08-05T15:55:24.252907", "case_id": "EC_036", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:55:24.643210", "case_id": "EC_035", "step": "policy_evaluated", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 132.37, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:24.643232", "case_id": "EC_035", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:25.611769", "case_id": "EC_032", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:25.611779", "case_id": "EC_032", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 31.64}
-{"timestamp": "2026-08-05T15:55:25.631825", "case_id": "EC_037", "step": "investigation_started", "claimed_order_id": "9f5bd892aa4c461b116e5c163f16b40a"}
-{"timestamp": "2026-08-05T15:55:25.631834", "case_id": "EC_037", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:55:26.623015", "case_id": "EC_036", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:26.963472", "case_id": "EC_037", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:27.633508", "case_id": "EC_036", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:27.718799", "case_id": "EC_036", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:28.107784", "case_id": "EC_037", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:30.338333", "case_id": "EC_036", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:30.338731", "case_id": "EC_036", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:30.842850", "case_id": "EC_037", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:30.866017", "case_id": "EC_037", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:30.866467", "case_id": "EC_037", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:30.948980", "case_id": "EC_034", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:30.948990", "case_id": "EC_034", "step": "investigation_completed", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 85.14}
-{"timestamp": "2026-08-05T15:55:30.968154", "case_id": "EC_038", "step": "investigation_started", "claimed_order_id": "efcd8852328a37fca811747c09c6fb69"}
-{"timestamp": "2026-08-05T15:55:30.968165", "case_id": "EC_038", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:55:31.677200", "case_id": "EC_033", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:31.677215", "case_id": "EC_033", "step": "investigation_completed", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 35.96}
-{"timestamp": "2026-08-05T15:55:31.700224", "case_id": "EC_039", "step": "investigation_started", "claimed_order_id": "8ac5066a163c60c1ae9bf17200df3dd1"}
-{"timestamp": "2026-08-05T15:55:31.700236", "case_id": "EC_039", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:55:32.446337", "case_id": "EC_038", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:33.132387", "case_id": "EC_039", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:33.360740", "case_id": "EC_038", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:34.037301", "case_id": "EC_038", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:35.507048", "case_id": "EC_039", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:35.516904", "case_id": "EC_039", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:36.309439", "case_id": "EC_036", "step": "policy_evaluated", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:36.309465", "case_id": "EC_036", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:37.729701", "case_id": "EC_038", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:37.730570", "case_id": "EC_038", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:38.088029", "case_id": "EC_039", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:38.088500", "case_id": "EC_039", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:38.415868", "case_id": "EC_035", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:38.415879", "case_id": "EC_035", "step": "investigation_completed", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 132.37}
-{"timestamp": "2026-08-05T15:55:38.436040", "case_id": "EC_040", "step": "investigation_started", "claimed_order_id": "992cbe3e064cd39f9ccde60a29ffcd3c"}
-{"timestamp": "2026-08-05T15:55:38.436049", "case_id": "EC_040", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:55:39.939673", "case_id": "EC_037", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 24.38, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:39.939695", "case_id": "EC_037", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:39.964824", "case_id": "EC_040", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:41.344885", "case_id": "EC_040", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:42.044522", "case_id": "EC_040", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:43.246868", "case_id": "EC_040", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:43.247401", "case_id": "EC_040", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:44.648529", "case_id": "EC_039", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 30.54, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:44.648554", "case_id": "EC_039", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:44.742554", "case_id": "EC_038", "step": "policy_evaluated", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:44.742590", "case_id": "EC_038", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:48.443633", "case_id": "EC_036", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:48.443642", "case_id": "EC_036", "step": "investigation_completed", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0}
-{"timestamp": "2026-08-05T15:55:48.461543", "case_id": "EC_041", "step": "investigation_started", "claimed_order_id": "614bc59c7d5e038587336616e3198e33"}
-{"timestamp": "2026-08-05T15:55:48.461554", "case_id": "EC_041", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:55:50.109867", "case_id": "EC_041", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:50.540523", "case_id": "EC_037", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:50.540532", "case_id": "EC_037", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 24.38}
-{"timestamp": "2026-08-05T15:55:50.561235", "case_id": "EC_042", "step": "investigation_started", "claimed_order_id": "0c65eb5a1415db7a20dfc869c9277e7a"}
-{"timestamp": "2026-08-05T15:55:50.561245", "case_id": "EC_042", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:55:52.150587", "case_id": "EC_042", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:52.346750", "case_id": "EC_040", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 75.98, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:52.346782", "case_id": "EC_040", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:53.473567", "case_id": "EC_041", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:53.505092", "case_id": "EC_041", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:53.643621", "case_id": "EC_042", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:55.542232", "case_id": "EC_039", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:55.542246", "case_id": "EC_039", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 30.54}
-{"timestamp": "2026-08-05T15:55:55.562894", "case_id": "EC_043", "step": "investigation_started", "claimed_order_id": "e58fb7bfd033514475ab0883ded704f4"}
-{"timestamp": "2026-08-05T15:55:55.562904", "case_id": "EC_043", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:55:55.990922", "case_id": "EC_041", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:55.991344", "case_id": "EC_041", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:56.729513", "case_id": "EC_042", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:57.061849", "case_id": "EC_038", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:55:57.061861", "case_id": "EC_038", "step": "investigation_completed", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0}
-{"timestamp": "2026-08-05T15:55:57.098303", "case_id": "EC_044", "step": "investigation_started", "claimed_order_id": "a833e4af2b4c893929b9f3adce3ecbeb"}
-{"timestamp": "2026-08-05T15:55:57.098315", "case_id": "EC_044", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:55:57.273870", "case_id": "EC_043", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:57.484248", "case_id": "EC_042", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:57.484753", "case_id": "EC_042", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:55:57.816599", "case_id": "EC_043", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:58.765245", "case_id": "EC_044", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:55:59.549170", "case_id": "EC_043", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:00.184437", "case_id": "EC_043", "step": "domain_agent_completed", "domain": "payment", "finding": "mismatch", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:00.186057", "case_id": "EC_043", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:56:00.437082", "case_id": "EC_044", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:00.536554", "case_id": "EC_044", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:02.501264", "case_id": "EC_044", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:02.501696", "case_id": "EC_044", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:56:02.760973", "case_id": "EC_042", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 17.6, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:56:02.760989", "case_id": "EC_042", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:03.195352", "case_id": "EC_041", "step": "policy_evaluated", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:56:03.195367", "case_id": "EC_041", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:03.423405", "case_id": "EC_040", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:03.423413", "case_id": "EC_040", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 75.98}
-{"timestamp": "2026-08-05T15:56:03.438482", "case_id": "EC_045", "step": "investigation_started", "claimed_order_id": "fe64170e936bc5f6a6a41def260984b9"}
-{"timestamp": "2026-08-05T15:56:03.438489", "case_id": "EC_045", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:56:05.030215", "case_id": "EC_045", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:05.412544", "case_id": "EC_045", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:07.287631", "case_id": "EC_045", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:08.512030", "case_id": "EC_043", "step": "policy_evaluated", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 18.37, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:56:08.512057", "case_id": "EC_043", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:09.619432", "case_id": "EC_044", "step": "policy_evaluated", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:56:09.619448", "case_id": "EC_044", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:09.635303", "case_id": "EC_045", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:09.635725", "case_id": "EC_045", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:56:12.724136", "case_id": "EC_041", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:12.724151", "case_id": "EC_041", "step": "investigation_completed", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0}
-{"timestamp": "2026-08-05T15:56:12.740813", "case_id": "EC_046", "step": "investigation_started", "claimed_order_id": "0e3ec3c17b64c6cc7bc01bba21e7afdf"}
-{"timestamp": "2026-08-05T15:56:12.740821", "case_id": "EC_046", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:56:12.807857", "case_id": "EC_042", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:12.807876", "case_id": "EC_042", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 17.6}
-{"timestamp": "2026-08-05T15:56:12.826052", "case_id": "EC_047", "step": "investigation_started", "claimed_order_id": "2cfc79d9582e9135c0a9b61fa60e6b21"}
-{"timestamp": "2026-08-05T15:56:12.826059", "case_id": "EC_047", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:56:14.297946", "case_id": "EC_046", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:14.347242", "case_id": "EC_047", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:14.900089", "case_id": "EC_045", "step": "policy_evaluated", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:56:14.900106", "case_id": "EC_045", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:14.916950", "case_id": "EC_047", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:15.338127", "case_id": "EC_047", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:15.825272", "case_id": "EC_047", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:15.825722", "case_id": "EC_047", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:56:15.902446", "case_id": "EC_046", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:17.147007", "case_id": "EC_046", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:17.201213", "case_id": "EC_046", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:17.201928", "case_id": "EC_046", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:56:19.653067", "case_id": "EC_043", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:19.653079", "case_id": "EC_043", "step": "investigation_completed", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 18.37}
-{"timestamp": "2026-08-05T15:56:19.676609", "case_id": "EC_048", "step": "investigation_started", "claimed_order_id": "b8ed89bd3f1fe72244f0f616acdc7da1"}
-{"timestamp": "2026-08-05T15:56:19.676617", "case_id": "EC_048", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:56:21.679976", "case_id": "EC_047", "step": "policy_evaluated", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 79.56, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:56:21.679997", "case_id": "EC_047", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:22.635124", "case_id": "EC_044", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:22.635133", "case_id": "EC_044", "step": "investigation_completed", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0}
-{"timestamp": "2026-08-05T15:56:22.653824", "case_id": "EC_049", "step": "investigation_started", "claimed_order_id": "7c29f6fa9efcbf410b4bbb9362b9f7c9"}
-{"timestamp": "2026-08-05T15:56:22.653833", "case_id": "EC_049", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:56:22.831203", "case_id": "EC_048", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:23.048661", "case_id": "EC_048", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:24.038466", "case_id": "EC_048", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:24.154964", "case_id": "EC_046", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 25.52, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:56:24.154983", "case_id": "EC_046", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:24.242974", "case_id": "EC_049", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:25.060124", "case_id": "EC_048", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:25.060494", "case_id": "EC_048", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:56:25.215887", "case_id": "EC_045", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:25.215897", "case_id": "EC_045", "step": "investigation_completed", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0}
-{"timestamp": "2026-08-05T15:56:25.233302", "case_id": "EC_050", "step": "investigation_started", "claimed_order_id": "370098d35ccd8a2af86b57c81ac7d24f"}
-{"timestamp": "2026-08-05T15:56:25.233310", "case_id": "EC_050", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
-{"timestamp": "2026-08-05T15:56:25.432959", "case_id": "EC_049", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:26.645443", "case_id": "EC_049", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:26.646475", "case_id": "EC_050", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:27.430247", "case_id": "EC_049", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:27.430645", "case_id": "EC_049", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:56:28.534987", "case_id": "EC_050", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:30.945912", "case_id": "EC_050", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:31.248985", "case_id": "EC_050", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
-{"timestamp": "2026-08-05T15:56:31.249392", "case_id": "EC_050", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:56:32.897084", "case_id": "EC_048", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 49.74, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:56:32.897105", "case_id": "EC_048", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:33.492520", "case_id": "EC_049", "step": "policy_evaluated", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:56:33.492534", "case_id": "EC_049", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:33.604930", "case_id": "EC_047", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:33.604939", "case_id": "EC_047", "step": "investigation_completed", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 79.56}
-{"timestamp": "2026-08-05T15:56:35.606409", "case_id": "EC_046", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:35.606440", "case_id": "EC_046", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 25.52}
-{"timestamp": "2026-08-05T15:56:39.043430", "case_id": "EC_050", "step": "policy_evaluated", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
-{"timestamp": "2026-08-05T15:56:39.043451", "case_id": "EC_050", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:43.581345", "case_id": "EC_048", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:43.581357", "case_id": "EC_048", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 49.74}
-{"timestamp": "2026-08-05T15:56:45.810851", "case_id": "EC_049", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:45.810859", "case_id": "EC_049", "step": "investigation_completed", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0}
-{"timestamp": "2026-08-05T15:56:50.802531", "case_id": "EC_050", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
-{"timestamp": "2026-08-05T15:56:50.802539", "case_id": "EC_050", "step": "investigation_completed", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0}
+{"timestamp": "2026-08-05T16:09:44.342326", "case_id": "EC_002", "step": "investigation_started", "claimed_order_id": "eb09635680fadffb33358e40b05c9029"}
+{"timestamp": "2026-08-05T16:09:44.342353", "case_id": "EC_002", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:09:44.342639", "case_id": "EC_001", "step": "investigation_started", "claimed_order_id": "9b75cdaf2d85857ef023980e15d01546"}
+{"timestamp": "2026-08-05T16:09:44.342646", "case_id": "EC_001", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:09:44.344805", "case_id": "EC_004", "step": "investigation_started", "claimed_order_id": "5d9c5817e278892b7498d90bfa28ade8"}
+{"timestamp": "2026-08-05T16:09:44.344811", "case_id": "EC_004", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:09:44.346366", "case_id": "EC_005", "step": "investigation_started", "claimed_order_id": "3a20bcc250e5404ca717dfa90e8a9c05"}
+{"timestamp": "2026-08-05T16:09:44.346373", "case_id": "EC_005", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:09:44.347511", "case_id": "EC_003", "step": "investigation_started", "claimed_order_id": "6c1798a95735e69db81fe92f8c40bdb4"}
+{"timestamp": "2026-08-05T16:09:44.347516", "case_id": "EC_003", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:09:47.569593", "case_id": "EC_005", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:47.863805", "case_id": "EC_004", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:48.166551", "case_id": "EC_002", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:48.634902", "case_id": "EC_001", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:49.495986", "case_id": "EC_003", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:50.216126", "case_id": "EC_003", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:52.917237", "case_id": "EC_005", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:53.569656", "case_id": "EC_002", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:53.571668", "case_id": "EC_004", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:53.737066", "case_id": "EC_001", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:53.761335", "case_id": "EC_002", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:54.340794", "case_id": "EC_004", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:54.729213", "case_id": "EC_005", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:54.922552", "case_id": "EC_002", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:54.923028", "case_id": "EC_002", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:09:55.110439", "case_id": "EC_001", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:55.112583", "case_id": "EC_003", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:55.120102", "case_id": "EC_005", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:55.120665", "case_id": "EC_005", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:09:57.757566", "case_id": "EC_004", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:57.758067", "case_id": "EC_004", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:09:58.188579", "case_id": "EC_001", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:58.189119", "case_id": "EC_001", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:09:58.814046", "case_id": "EC_003", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:09:58.814588", "case_id": "EC_003", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:09:59.184003", "case_id": "EC_002", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 18.27, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:09:59.184020", "case_id": "EC_002", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:10:00.115700", "case_id": "EC_005", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 32.75, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:10:00.115720", "case_id": "EC_005", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:10:01.686984", "case_id": "EC_001", "step": "policy_evaluated", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:10:01.687005", "case_id": "EC_001", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:10:01.901519", "case_id": "EC_003", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 32.22, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:10:01.901549", "case_id": "EC_003", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:10:07.600521", "case_id": "EC_004", "step": "policy_evaluated", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 290.16, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:10:07.600551", "case_id": "EC_004", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:10:14.750977", "case_id": "EC_005", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:10:14.750990", "case_id": "EC_005", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 32.75}
+{"timestamp": "2026-08-05T16:10:14.772015", "case_id": "EC_006", "step": "investigation_started", "claimed_order_id": "0e4a4de1d15b6df8d4335fb2db61667a"}
+{"timestamp": "2026-08-05T16:10:14.772023", "case_id": "EC_006", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:10:15.073157", "case_id": "EC_002", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:10:15.073169", "case_id": "EC_002", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 18.27}
+{"timestamp": "2026-08-05T16:10:15.099604", "case_id": "EC_007", "step": "investigation_started", "claimed_order_id": "cf788ee4258fde5130bb5651bda63918"}
+{"timestamp": "2026-08-05T16:10:15.099676", "case_id": "EC_007", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:10:15.117668", "case_id": "EC_003", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:10:15.117678", "case_id": "EC_003", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 32.22}
+{"timestamp": "2026-08-05T16:10:15.142309", "case_id": "EC_008", "step": "investigation_started", "claimed_order_id": "23c312ca9f0242a48a95e5643bee2645"}
+{"timestamp": "2026-08-05T16:10:15.142321", "case_id": "EC_008", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:10:16.839043", "case_id": "EC_008", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:17.655861", "case_id": "EC_001", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:10:17.655872", "case_id": "EC_001", "step": "investigation_completed", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0}
+{"timestamp": "2026-08-05T16:10:17.679733", "case_id": "EC_009", "step": "investigation_started", "claimed_order_id": "6683aa4f73f7869ec65ebeeef53f700b"}
+{"timestamp": "2026-08-05T16:10:17.679747", "case_id": "EC_009", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:10:19.836994", "case_id": "EC_006", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:21.432632", "case_id": "EC_006", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:21.456348", "case_id": "EC_009", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:21.604847", "case_id": "EC_008", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:21.836701", "case_id": "EC_006", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:21.838252", "case_id": "EC_007", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:22.307705", "case_id": "EC_007", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:23.237832", "case_id": "EC_004", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:10:23.237842", "case_id": "EC_004", "step": "investigation_completed", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 290.16}
+{"timestamp": "2026-08-05T16:10:23.256578", "case_id": "EC_010", "step": "investigation_started", "claimed_order_id": "919baca007d9525b6668c18f79a33197"}
+{"timestamp": "2026-08-05T16:10:23.256586", "case_id": "EC_010", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:10:23.453915", "case_id": "EC_008", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:24.487239", "case_id": "EC_009", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:25.850992", "case_id": "EC_006", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:25.851101", "case_id": "EC_009", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:25.851436", "case_id": "EC_006", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:10:26.513907", "case_id": "EC_010", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:28.289258", "case_id": "EC_007", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:28.294855", "case_id": "EC_007", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:28.297485", "case_id": "EC_007", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:10:28.297654", "case_id": "EC_008", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:28.298508", "case_id": "EC_008", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:10:29.368683", "case_id": "EC_006", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 60.4, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:10:29.368706", "case_id": "EC_006", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:10:29.798722", "case_id": "EC_010", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:31.774462", "case_id": "EC_008", "step": "policy_evaluated", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:10:31.774484", "case_id": "EC_008", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:10:34.133254", "case_id": "EC_007", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 44.13, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:10:34.133308", "case_id": "EC_007", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:10:36.601791", "case_id": "EC_009", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:36.604189", "case_id": "EC_009", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:10:36.604375", "case_id": "EC_010", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:36.965463", "case_id": "EC_010", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:36.966167", "case_id": "EC_010", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:10:40.790358", "case_id": "EC_009", "step": "policy_evaluated", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 144.3, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:10:40.790373", "case_id": "EC_009", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:10:40.791611", "case_id": "EC_010", "step": "policy_evaluated", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:10:40.791625", "case_id": "EC_010", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:10:46.727668", "case_id": "EC_006", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:10:46.727680", "case_id": "EC_006", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 60.4}
+{"timestamp": "2026-08-05T16:10:46.749290", "case_id": "EC_011", "step": "investigation_started", "claimed_order_id": "113e41a438f06ffae6d1857e01d60c45"}
+{"timestamp": "2026-08-05T16:10:46.749299", "case_id": "EC_011", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:10:48.665577", "case_id": "EC_011", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:51.362971", "case_id": "EC_007", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:10:51.362982", "case_id": "EC_007", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 44.13}
+{"timestamp": "2026-08-05T16:10:51.383693", "case_id": "EC_012", "step": "investigation_started", "claimed_order_id": "73628c6d02ed8f6134d9752cd7b83c2a"}
+{"timestamp": "2026-08-05T16:10:51.383706", "case_id": "EC_012", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:10:51.786792", "case_id": "EC_008", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:10:51.786807", "case_id": "EC_008", "step": "investigation_completed", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0}
+{"timestamp": "2026-08-05T16:10:51.817239", "case_id": "EC_013", "step": "investigation_started", "claimed_order_id": "97e8d3eb8f48e3610beed991e5f32296"}
+{"timestamp": "2026-08-05T16:10:51.817247", "case_id": "EC_013", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:10:52.396385", "case_id": "EC_011", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:53.007192", "case_id": "EC_011", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:53.389786", "case_id": "EC_011", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:53.390198", "case_id": "EC_011", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:10:54.147653", "case_id": "EC_013", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:54.196516", "case_id": "EC_012", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:59.192256", "case_id": "EC_013", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:59.903408", "case_id": "EC_013", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:10:59.990885", "case_id": "EC_011", "step": "policy_evaluated", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 127.12, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:10:59.990908", "case_id": "EC_011", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:11:00.154300", "case_id": "EC_012", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:00.496107", "case_id": "EC_010", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:11:00.496121", "case_id": "EC_010", "step": "investigation_completed", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0}
+{"timestamp": "2026-08-05T16:11:00.538320", "case_id": "EC_014", "step": "investigation_started", "claimed_order_id": "f938fa004452c776198a593e5fb9056d"}
+{"timestamp": "2026-08-05T16:11:00.538333", "case_id": "EC_014", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:11:00.823500", "case_id": "EC_012", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:03.069620", "case_id": "EC_012", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:03.070140", "case_id": "EC_012", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:11:03.074073", "case_id": "EC_009", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:11:03.074083", "case_id": "EC_009", "step": "investigation_completed", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 144.3}
+{"timestamp": "2026-08-05T16:11:03.093226", "case_id": "EC_015", "step": "investigation_started", "claimed_order_id": "ccec592b58e122dc2bfc2305152d9603"}
+{"timestamp": "2026-08-05T16:11:03.093234", "case_id": "EC_015", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:11:03.284280", "case_id": "EC_013", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:03.285524", "case_id": "EC_013", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:11:04.462080", "case_id": "EC_014", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:05.621240", "case_id": "EC_015", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:06.211057", "case_id": "EC_012", "step": "policy_evaluated", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 226.23, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:11:06.211080", "case_id": "EC_012", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:11:07.473255", "case_id": "EC_013", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 48.14, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:11:07.473277", "case_id": "EC_013", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:11:09.716002", "case_id": "EC_014", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:11.877875", "case_id": "EC_014", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:13.643259", "case_id": "EC_014", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:13.643756", "case_id": "EC_014", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:11:13.876472", "case_id": "EC_015", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:14.414975", "case_id": "EC_015", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:14.428518", "case_id": "EC_015", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:14.428951", "case_id": "EC_015", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:11:16.793606", "case_id": "EC_014", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 50.37, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:11:16.793623", "case_id": "EC_014", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:11:20.753228", "case_id": "EC_015", "step": "policy_evaluated", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:11:20.753243", "case_id": "EC_015", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:11:20.814954", "case_id": "EC_011", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:11:20.814967", "case_id": "EC_011", "step": "investigation_completed", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 127.12}
+{"timestamp": "2026-08-05T16:11:20.833804", "case_id": "EC_016", "step": "investigation_started", "claimed_order_id": "9c9353e8fd52f68f8442e580b5f2bba6"}
+{"timestamp": "2026-08-05T16:11:20.833816", "case_id": "EC_016", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:11:28.040913", "case_id": "EC_016", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:28.517353", "case_id": "EC_013", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:11:28.517361", "case_id": "EC_013", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 48.14}
+{"timestamp": "2026-08-05T16:11:28.532074", "case_id": "EC_017", "step": "investigation_started", "claimed_order_id": "3c5939ce763419f5942f27acffd072e6"}
+{"timestamp": "2026-08-05T16:11:28.532082", "case_id": "EC_017", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:11:31.164618", "case_id": "EC_016", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:31.548754", "case_id": "EC_016", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:33.121125", "case_id": "EC_017", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:34.003543", "case_id": "EC_017", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:34.813174", "case_id": "EC_016", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:34.813578", "case_id": "EC_016", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:11:38.681767", "case_id": "EC_017", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:46.638165", "case_id": "EC_012", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:11:46.638182", "case_id": "EC_012", "step": "investigation_completed", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 226.23}
+{"timestamp": "2026-08-05T16:11:46.652941", "case_id": "EC_018", "step": "investigation_started", "claimed_order_id": "f396e1280028fa9c8c83111abee5f2e9"}
+{"timestamp": "2026-08-05T16:11:46.652949", "case_id": "EC_018", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:11:47.321790", "case_id": "EC_016", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 18.15, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:11:47.321804", "case_id": "EC_016", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:11:49.387305", "case_id": "EC_018", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:54.777697", "case_id": "EC_018", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:56.847043", "case_id": "EC_014", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:11:56.847063", "case_id": "EC_014", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 50.37}
+{"timestamp": "2026-08-05T16:11:56.861014", "case_id": "EC_019", "step": "investigation_started", "claimed_order_id": "a4e90af1c84c4455c7c4c65293ae2c78"}
+{"timestamp": "2026-08-05T16:11:56.861023", "case_id": "EC_019", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:11:58.532615", "case_id": "EC_018", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:58.872189", "case_id": "EC_018", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:11:58.872561", "case_id": "EC_018", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:12:01.006472", "case_id": "EC_015", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:12:01.006486", "case_id": "EC_015", "step": "investigation_completed", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0}
+{"timestamp": "2026-08-05T16:12:01.025203", "case_id": "EC_020", "step": "investigation_started", "claimed_order_id": "4f3f48cbedce0c316c688af6fc7e9c56"}
+{"timestamp": "2026-08-05T16:12:01.025211", "case_id": "EC_020", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:12:01.616296", "case_id": "EC_019", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:03.028480", "case_id": "EC_017", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:03.028922", "case_id": "EC_017", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:12:03.321593", "case_id": "EC_018", "step": "policy_evaluated", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:12:03.321608", "case_id": "EC_018", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:12:04.188057", "case_id": "EC_020", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:06.103611", "case_id": "EC_019", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:07.240758", "case_id": "EC_019", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:07.972575", "case_id": "EC_017", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 48.54, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:12:07.972589", "case_id": "EC_017", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:12:10.031296", "case_id": "EC_019", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:10.031712", "case_id": "EC_019", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:12:12.844931", "case_id": "EC_020", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:14.870078", "case_id": "EC_020", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:15.046283", "case_id": "EC_019", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 23.48, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:12:15.046299", "case_id": "EC_019", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:12:16.117662", "case_id": "EC_020", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:16.118156", "case_id": "EC_020", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:12:20.158735", "case_id": "EC_020", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 68.64, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:12:20.158752", "case_id": "EC_020", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:12:28.043584", "case_id": "EC_016", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:12:28.043603", "case_id": "EC_016", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 18.15}
+{"timestamp": "2026-08-05T16:12:28.057241", "case_id": "EC_021", "step": "investigation_started", "claimed_order_id": "cc8778d76e567b45082b7f52bce23095"}
+{"timestamp": "2026-08-05T16:12:28.057250", "case_id": "EC_021", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:12:30.272387", "case_id": "EC_021", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:36.532012", "case_id": "EC_019", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:12:36.532021", "case_id": "EC_019", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 23.48}
+{"timestamp": "2026-08-05T16:12:36.548100", "case_id": "EC_022", "step": "investigation_started", "claimed_order_id": "ca0400dec2c292340c373e63b1c2c597"}
+{"timestamp": "2026-08-05T16:12:36.548109", "case_id": "EC_022", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:12:37.170622", "case_id": "EC_021", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:38.066763", "case_id": "EC_021", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:43.273128", "case_id": "EC_018", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:12:43.273141", "case_id": "EC_018", "step": "investigation_completed", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0}
+{"timestamp": "2026-08-05T16:12:43.286582", "case_id": "EC_023", "step": "investigation_started", "claimed_order_id": "9d0516ad96d793d308cec3c5929ed649"}
+{"timestamp": "2026-08-05T16:12:43.286592", "case_id": "EC_023", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:12:43.875260", "case_id": "EC_017", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:12:43.875269", "case_id": "EC_017", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 48.54}
+{"timestamp": "2026-08-05T16:12:43.888999", "case_id": "EC_024", "step": "investigation_started", "claimed_order_id": "6560fb10610771449cb0463c5ba12199"}
+{"timestamp": "2026-08-05T16:12:43.889007", "case_id": "EC_024", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:12:44.721340", "case_id": "EC_022", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:47.176977", "case_id": "EC_024", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:48.208614", "case_id": "EC_023", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:48.758228", "case_id": "EC_022", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:51.152227", "case_id": "EC_022", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:51.304592", "case_id": "EC_024", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:52.705026", "case_id": "EC_023", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:57.775695", "case_id": "EC_024", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:12:58.171304", "case_id": "EC_020", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:12:58.171312", "case_id": "EC_020", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 68.64}
+{"timestamp": "2026-08-05T16:12:58.186426", "case_id": "EC_025", "step": "investigation_started", "claimed_order_id": "4cf6a6de996beb9d4b190c7983be98d9"}
+{"timestamp": "2026-08-05T16:12:58.186440", "case_id": "EC_025", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:13:00.995027", "case_id": "EC_025", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:01.241961", "case_id": "EC_021", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:01.242370", "case_id": "EC_021", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:13:05.181228", "case_id": "EC_025", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:06.448954", "case_id": "EC_022", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:06.450823", "case_id": "EC_022", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:13:06.450955", "case_id": "EC_025", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:07.712419", "case_id": "EC_025", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:07.712800", "case_id": "EC_025", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:13:09.115499", "case_id": "EC_021", "step": "policy_evaluated", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:13:09.115513", "case_id": "EC_021", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:13:11.326497", "case_id": "EC_022", "step": "policy_evaluated", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:13:11.326512", "case_id": "EC_022", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:13:12.544206", "case_id": "EC_023", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:13.746340", "case_id": "EC_025", "step": "policy_evaluated", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:13:13.746355", "case_id": "EC_025", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:13:14.691029", "case_id": "EC_024", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:14.691432", "case_id": "EC_024", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:13:17.163006", "case_id": "EC_023", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:17.163396", "case_id": "EC_023", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:13:19.307718", "case_id": "EC_024", "step": "policy_evaluated", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 333.62, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:13:19.307735", "case_id": "EC_024", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:13:22.148827", "case_id": "EC_023", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 101.0, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:13:22.148841", "case_id": "EC_023", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:13:35.478461", "case_id": "EC_025", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:13:35.478470", "case_id": "EC_025", "step": "investigation_completed", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0}
+{"timestamp": "2026-08-05T16:13:35.480193", "case_id": "EC_022", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:13:35.480200", "case_id": "EC_022", "step": "investigation_completed", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0}
+{"timestamp": "2026-08-05T16:13:35.503789", "case_id": "EC_027", "step": "investigation_started", "claimed_order_id": "9a71f055d972d1ebacec9df7376ff1e3"}
+{"timestamp": "2026-08-05T16:13:35.503799", "case_id": "EC_027", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:13:35.516292", "case_id": "EC_026", "step": "investigation_started", "claimed_order_id": "9b4fc5c379134e1329bd48641ba285e3"}
+{"timestamp": "2026-08-05T16:13:35.516301", "case_id": "EC_026", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:13:39.934946", "case_id": "EC_026", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:41.252858", "case_id": "EC_024", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:13:41.252867", "case_id": "EC_024", "step": "investigation_completed", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 333.62}
+{"timestamp": "2026-08-05T16:13:41.267430", "case_id": "EC_028", "step": "investigation_started", "claimed_order_id": "1118f05e23d1a8082fa47f8a377de658"}
+{"timestamp": "2026-08-05T16:13:41.267437", "case_id": "EC_028", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:13:41.557107", "case_id": "EC_027", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:42.864162", "case_id": "EC_026", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:43.688765", "case_id": "EC_027", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:43.998757", "case_id": "EC_026", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:45.642771", "case_id": "EC_028", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:49.370060", "case_id": "EC_027", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:49.370099", "case_id": "EC_028", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:50.956414", "case_id": "EC_028", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:51.453282", "case_id": "EC_026", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:51.453782", "case_id": "EC_026", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:13:53.626728", "case_id": "EC_021", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:13:53.626749", "case_id": "EC_021", "step": "investigation_completed", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0}
+{"timestamp": "2026-08-05T16:13:53.643368", "case_id": "EC_029", "step": "investigation_started", "claimed_order_id": "b69321fb7d3000994c5a2b55c4f3cb01"}
+{"timestamp": "2026-08-05T16:13:53.643376", "case_id": "EC_029", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:13:54.216227", "case_id": "EC_028", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:13:54.216883", "case_id": "EC_028", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:13:55.800435", "case_id": "EC_026", "step": "policy_evaluated", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 670.04, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:13:55.800454", "case_id": "EC_026", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:13:57.376605", "case_id": "EC_028", "step": "policy_evaluated", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 242.62, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:13:57.376626", "case_id": "EC_028", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:13:58.754491", "case_id": "EC_029", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:14:04.216820", "case_id": "EC_029", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:14:07.139008", "case_id": "EC_027", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:14:07.139475", "case_id": "EC_027", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:14:07.156034", "case_id": "EC_029", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:14:07.266155", "case_id": "EC_029", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:14:07.266601", "case_id": "EC_029", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:14:07.956832", "case_id": "EC_023", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:14:07.956846", "case_id": "EC_023", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 101.0}
+{"timestamp": "2026-08-05T16:14:07.974996", "case_id": "EC_030", "step": "investigation_started", "claimed_order_id": "676e40056867189a1b3599f3e646f421"}
+{"timestamp": "2026-08-05T16:14:07.975005", "case_id": "EC_030", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:14:09.787551", "case_id": "EC_029", "step": "policy_evaluated", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:14:09.787565", "case_id": "EC_029", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:14:09.908717", "case_id": "EC_027", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 30.38, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:14:09.908732", "case_id": "EC_027", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:14:11.698822", "case_id": "EC_030", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:14:15.788309", "case_id": "EC_030", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:14:22.421778", "case_id": "EC_030", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:14:38.109541", "case_id": "EC_030", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:14:38.109927", "case_id": "EC_030", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:14:40.895910", "case_id": "EC_030", "step": "policy_evaluated", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 81.48, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:14:40.895926", "case_id": "EC_030", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:14:41.133437", "case_id": "EC_026", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:14:41.133457", "case_id": "EC_026", "step": "investigation_completed", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 670.04}
+{"timestamp": "2026-08-05T16:14:41.218134", "case_id": "EC_031", "step": "investigation_started", "claimed_order_id": "72fa449394ed9dc9093819f93ca563af"}
+{"timestamp": "2026-08-05T16:14:41.218143", "case_id": "EC_031", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:14:41.790992", "case_id": "EC_028", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:14:41.791010", "case_id": "EC_028", "step": "investigation_completed", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 242.62}
+{"timestamp": "2026-08-05T16:14:41.881652", "case_id": "EC_032", "step": "investigation_started", "claimed_order_id": "d3782eb2976abf986175941c51364aab"}
+{"timestamp": "2026-08-05T16:14:41.881666", "case_id": "EC_032", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:14:49.460244", "case_id": "EC_032", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:14:50.114655", "case_id": "EC_029", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:14:50.114669", "case_id": "EC_029", "step": "investigation_completed", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0}
+{"timestamp": "2026-08-05T16:14:50.126141", "case_id": "EC_033", "step": "investigation_started", "claimed_order_id": "edefc0fa09c98cc491e9d2cf95ee4a5f"}
+{"timestamp": "2026-08-05T16:14:50.126148", "case_id": "EC_033", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:14:50.344107", "case_id": "EC_031", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:14:51.825164", "case_id": "EC_027", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:14:51.825189", "case_id": "EC_027", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 30.38}
+{"timestamp": "2026-08-05T16:14:51.838774", "case_id": "EC_034", "step": "investigation_started", "claimed_order_id": "b210c676cae65f95f7e08a49d195e1a1"}
+{"timestamp": "2026-08-05T16:14:51.838782", "case_id": "EC_034", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:14:57.010369", "case_id": "EC_031", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:14:57.948963", "case_id": "EC_032", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:14:57.950072", "case_id": "EC_031", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:14:58.064886", "case_id": "EC_032", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:14:58.156696", "case_id": "EC_031", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:14:58.157143", "case_id": "EC_031", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:14:59.951505", "case_id": "EC_034", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:01.105995", "case_id": "EC_033", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:01.801118", "case_id": "EC_033", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:02.568599", "case_id": "EC_034", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:02.707153", "case_id": "EC_033", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:03.799631", "case_id": "EC_034", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:04.005422", "case_id": "EC_031", "step": "policy_evaluated", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 138.92, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:15:04.005439", "case_id": "EC_031", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:15:08.042849", "case_id": "EC_033", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:08.043226", "case_id": "EC_033", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:15:11.016584", "case_id": "EC_032", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:11.017854", "case_id": "EC_032", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:15:11.515205", "case_id": "EC_034", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:11.515610", "case_id": "EC_034", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:15:11.900640", "case_id": "EC_033", "step": "policy_evaluated", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 35.96, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:15:11.900654", "case_id": "EC_033", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:15:14.800644", "case_id": "EC_034", "step": "policy_evaluated", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 85.14, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:15:14.800659", "case_id": "EC_034", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:15:15.988432", "case_id": "EC_032", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 31.64, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:15:15.988446", "case_id": "EC_032", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:15:17.648627", "case_id": "EC_030", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:15:17.648635", "case_id": "EC_030", "step": "investigation_completed", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 81.48}
+{"timestamp": "2026-08-05T16:15:17.660154", "case_id": "EC_035", "step": "investigation_started", "claimed_order_id": "ae443cb420061bab1f2c5e3ad279fde8"}
+{"timestamp": "2026-08-05T16:15:17.660162", "case_id": "EC_035", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:15:23.786712", "case_id": "EC_035", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:24.771342", "case_id": "EC_035", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:30.722884", "case_id": "EC_033", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:15:30.722892", "case_id": "EC_033", "step": "investigation_completed", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 35.96}
+{"timestamp": "2026-08-05T16:15:30.736921", "case_id": "EC_036", "step": "investigation_started", "claimed_order_id": "201797d3f567dc70cc5732ecf055e346"}
+{"timestamp": "2026-08-05T16:15:30.736931", "case_id": "EC_036", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:15:30.877475", "case_id": "EC_032", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:15:30.877483", "case_id": "EC_032", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 31.64}
+{"timestamp": "2026-08-05T16:15:30.891991", "case_id": "EC_037", "step": "investigation_started", "claimed_order_id": "9f5bd892aa4c461b116e5c163f16b40a"}
+{"timestamp": "2026-08-05T16:15:30.891999", "case_id": "EC_037", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:15:31.061499", "case_id": "EC_034", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:15:31.061512", "case_id": "EC_034", "step": "investigation_completed", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 85.14}
+{"timestamp": "2026-08-05T16:15:31.087439", "case_id": "EC_038", "step": "investigation_started", "claimed_order_id": "efcd8852328a37fca811747c09c6fb69"}
+{"timestamp": "2026-08-05T16:15:31.087450", "case_id": "EC_038", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:15:32.219965", "case_id": "EC_035", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:33.547509", "case_id": "EC_036", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:34.647448", "case_id": "EC_038", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:38.145032", "case_id": "EC_036", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:39.444070", "case_id": "EC_037", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:39.528902", "case_id": "EC_035", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:39.529288", "case_id": "EC_035", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:15:39.761776", "case_id": "EC_038", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:40.995339", "case_id": "EC_031", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:15:40.995349", "case_id": "EC_031", "step": "investigation_completed", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 138.92}
+{"timestamp": "2026-08-05T16:15:41.013420", "case_id": "EC_039", "step": "investigation_started", "claimed_order_id": "8ac5066a163c60c1ae9bf17200df3dd1"}
+{"timestamp": "2026-08-05T16:15:41.013432", "case_id": "EC_039", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:15:41.944386", "case_id": "EC_037", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:42.593659", "case_id": "EC_036", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:42.671619", "case_id": "EC_035", "step": "policy_evaluated", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 132.37, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:15:42.671643", "case_id": "EC_035", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:15:43.082614", "case_id": "EC_039", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:43.693091", "case_id": "EC_038", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:44.043766", "case_id": "EC_038", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:44.044168", "case_id": "EC_038", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:15:46.903173", "case_id": "EC_038", "step": "policy_evaluated", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:15:46.903197", "case_id": "EC_038", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:15:48.613999", "case_id": "EC_037", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:50.668414", "case_id": "EC_037", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:50.668822", "case_id": "EC_037", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:15:53.590881", "case_id": "EC_039", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:54.368467", "case_id": "EC_037", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 24.38, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:15:54.368490", "case_id": "EC_037", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:15:55.692739", "case_id": "EC_036", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:15:55.693245", "case_id": "EC_036", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:15:58.552753", "case_id": "EC_039", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:16:04.072152", "case_id": "EC_035", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:16:04.072162", "case_id": "EC_035", "step": "investigation_completed", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 132.37}
+{"timestamp": "2026-08-05T16:16:04.093322", "case_id": "EC_040", "step": "investigation_started", "claimed_order_id": "992cbe3e064cd39f9ccde60a29ffcd3c"}
+{"timestamp": "2026-08-05T16:16:04.093330", "case_id": "EC_040", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:16:07.734414", "case_id": "EC_040", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:16:08.877150", "case_id": "EC_039", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:16:08.877700", "case_id": "EC_039", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:16:12.656450", "case_id": "EC_039", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 30.54, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:16:12.656465", "case_id": "EC_039", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:16:12.995574", "case_id": "EC_036", "step": "policy_evaluated", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:16:12.995595", "case_id": "EC_036", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:16:13.428971", "case_id": "EC_040", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:16:16.186081", "case_id": "EC_040", "step": "domain_agent_completed", "domain": "delivery", "finding": "carrier_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:16:18.210603", "case_id": "EC_040", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:16:18.211021", "case_id": "EC_040", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:16:19.070614", "case_id": "EC_038", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:16:19.070622", "case_id": "EC_038", "step": "investigation_completed", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0}
+{"timestamp": "2026-08-05T16:16:19.086507", "case_id": "EC_041", "step": "investigation_started", "claimed_order_id": "614bc59c7d5e038587336616e3198e33"}
+{"timestamp": "2026-08-05T16:16:19.086514", "case_id": "EC_041", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:16:23.073938", "case_id": "EC_040", "step": "policy_evaluated", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 75.98, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:16:23.073961", "case_id": "EC_040", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:16:23.855088", "case_id": "EC_041", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:16:25.728472", "case_id": "EC_037", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:16:25.728499", "case_id": "EC_037", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 24.38}
+{"timestamp": "2026-08-05T16:16:25.744323", "case_id": "EC_042", "step": "investigation_started", "claimed_order_id": "0c65eb5a1415db7a20dfc869c9277e7a"}
+{"timestamp": "2026-08-05T16:16:25.744335", "case_id": "EC_042", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:16:28.777700", "case_id": "EC_042", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:16:29.062297", "case_id": "EC_041", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:16:31.775273", "case_id": "EC_041", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:16:34.502242", "case_id": "EC_042", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:16:35.757996", "case_id": "EC_042", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:16:38.023036", "case_id": "EC_042", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:16:38.023495", "case_id": "EC_042", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:16:43.709689", "case_id": "EC_042", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 17.6, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:16:43.709703", "case_id": "EC_042", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:16:50.142030", "case_id": "EC_041", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:16:50.142527", "case_id": "EC_041", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:16:51.665345", "case_id": "EC_039", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:16:51.665353", "case_id": "EC_039", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 30.54}
+{"timestamp": "2026-08-05T16:16:51.677460", "case_id": "EC_043", "step": "investigation_started", "claimed_order_id": "e58fb7bfd033514475ab0883ded704f4"}
+{"timestamp": "2026-08-05T16:16:51.677468", "case_id": "EC_043", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:16:55.784709", "case_id": "EC_041", "step": "policy_evaluated", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:16:55.784725", "case_id": "EC_041", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:16:56.979167", "case_id": "EC_036", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:16:56.979184", "case_id": "EC_036", "step": "investigation_completed", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0}
+{"timestamp": "2026-08-05T16:16:56.993393", "case_id": "EC_044", "step": "investigation_started", "claimed_order_id": "a833e4af2b4c893929b9f3adce3ecbeb"}
+{"timestamp": "2026-08-05T16:16:56.993401", "case_id": "EC_044", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:16:58.684676", "case_id": "EC_043", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:01.638729", "case_id": "EC_044", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:03.502335", "case_id": "EC_043", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:04.585277", "case_id": "EC_040", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:17:04.585291", "case_id": "EC_040", "step": "investigation_completed", "primary_issue": "late_delivery_logistics", "case_status": "action_required", "recommended_refund_brl": 75.98}
+{"timestamp": "2026-08-05T16:17:04.602006", "case_id": "EC_045", "step": "investigation_started", "claimed_order_id": "fe64170e936bc5f6a6a41def260984b9"}
+{"timestamp": "2026-08-05T16:17:04.602015", "case_id": "EC_045", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:17:04.777117", "case_id": "EC_043", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:18.002064", "case_id": "EC_045", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:20.065665", "case_id": "EC_043", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:20.066162", "case_id": "EC_043", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:17:21.141744", "case_id": "EC_044", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:22.669786", "case_id": "EC_044", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:23.917255", "case_id": "EC_042", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:17:23.917283", "case_id": "EC_042", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 17.6}
+{"timestamp": "2026-08-05T16:17:23.933642", "case_id": "EC_046", "step": "investigation_started", "claimed_order_id": "0e3ec3c17b64c6cc7bc01bba21e7afdf"}
+{"timestamp": "2026-08-05T16:17:23.933651", "case_id": "EC_046", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:17:24.892858", "case_id": "EC_043", "step": "policy_evaluated", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 18.37, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:17:24.892883", "case_id": "EC_043", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:17:26.604603", "case_id": "EC_044", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:26.604998", "case_id": "EC_044", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:17:27.481396", "case_id": "EC_045", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:31.042016", "case_id": "EC_046", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:33.157747", "case_id": "EC_044", "step": "policy_evaluated", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:17:33.157764", "case_id": "EC_044", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:17:34.582044", "case_id": "EC_046", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:36.063404", "case_id": "EC_045", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:36.862277", "case_id": "EC_045", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:36.862700", "case_id": "EC_045", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:17:37.235917", "case_id": "EC_046", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:38.714906", "case_id": "EC_041", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:17:38.714924", "case_id": "EC_041", "step": "investigation_completed", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0}
+{"timestamp": "2026-08-05T16:17:38.737534", "case_id": "EC_047", "step": "investigation_started", "claimed_order_id": "2cfc79d9582e9135c0a9b61fa60e6b21"}
+{"timestamp": "2026-08-05T16:17:38.737546", "case_id": "EC_047", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:17:39.059417", "case_id": "EC_046", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:39.059951", "case_id": "EC_046", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:17:40.680547", "case_id": "EC_045", "step": "policy_evaluated", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:17:40.680563", "case_id": "EC_045", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:17:43.202596", "case_id": "EC_047", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:43.853022", "case_id": "EC_046", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 25.52, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:17:43.853035", "case_id": "EC_046", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:17:48.591374", "case_id": "EC_047", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:53.139693", "case_id": "EC_047", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:53.436783", "case_id": "EC_047", "step": "domain_agent_completed", "domain": "order_product", "finding": "single_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:17:53.437164", "case_id": "EC_047", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:17:56.727516", "case_id": "EC_047", "step": "policy_evaluated", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 79.56, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:17:56.727532", "case_id": "EC_047", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:18:01.814558", "case_id": "EC_045", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:18:01.814566", "case_id": "EC_045", "step": "investigation_completed", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0}
+{"timestamp": "2026-08-05T16:18:01.831995", "case_id": "EC_048", "step": "investigation_started", "claimed_order_id": "b8ed89bd3f1fe72244f0f616acdc7da1"}
+{"timestamp": "2026-08-05T16:18:01.832003", "case_id": "EC_048", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:18:03.350200", "case_id": "EC_043", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:18:03.350209", "case_id": "EC_043", "step": "investigation_completed", "primary_issue": "unavailable_order_paid", "case_status": "action_required", "recommended_refund_brl": 18.37}
+{"timestamp": "2026-08-05T16:18:03.375320", "case_id": "EC_049", "step": "investigation_started", "claimed_order_id": "7c29f6fa9efcbf410b4bbb9362b9f7c9"}
+{"timestamp": "2026-08-05T16:18:03.375330", "case_id": "EC_049", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:18:04.548111", "case_id": "EC_048", "step": "domain_agent_completed", "domain": "customer", "finding": "repeat_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:18:06.789359", "case_id": "EC_049", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:18:11.989029", "case_id": "EC_049", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:18:13.375591", "case_id": "EC_048", "step": "domain_agent_completed", "domain": "delivery", "finding": "seller_delay", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:18:14.132732", "case_id": "EC_044", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:18:14.132751", "case_id": "EC_044", "step": "investigation_completed", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0}
+{"timestamp": "2026-08-05T16:18:14.153976", "case_id": "EC_050", "step": "investigation_started", "claimed_order_id": "370098d35ccd8a2af86b57c81ac7d24f"}
+{"timestamp": "2026-08-05T16:18:14.153987", "case_id": "EC_050", "step": "coordinator_delegation", "action": "dispatch_to_domain_agents", "domains": ["customer", "order_product", "delivery", "payment"]}
+{"timestamp": "2026-08-05T16:18:15.003078", "case_id": "EC_048", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:18:15.004443", "case_id": "EC_049", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:18:17.336546", "case_id": "EC_047", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:18:17.336558", "case_id": "EC_047", "step": "investigation_completed", "primary_issue": "canceled_order_paid", "case_status": "action_required", "recommended_refund_brl": 79.56}
+{"timestamp": "2026-08-05T16:18:24.286052", "case_id": "EC_050", "step": "domain_agent_completed", "domain": "payment", "finding": "reconciled", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:18:28.227248", "case_id": "EC_046", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:18:28.227262", "case_id": "EC_046", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 25.52}
+{"timestamp": "2026-08-05T16:18:29.696703", "case_id": "EC_050", "step": "domain_agent_completed", "domain": "customer", "finding": "first_time_customer", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:18:32.284617", "case_id": "EC_048", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:18:32.285117", "case_id": "EC_048", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:18:35.827867", "case_id": "EC_048", "step": "policy_evaluated", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 49.74, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:18:35.827882", "case_id": "EC_048", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:18:43.895521", "case_id": "EC_050", "step": "domain_agent_completed", "domain": "delivery", "finding": "on_time", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:18:48.081008", "case_id": "EC_050", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:18:48.081449", "case_id": "EC_050", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:18:53.748745", "case_id": "EC_049", "step": "domain_agent_completed", "domain": "order_product", "finding": "multi_item_order", "model": "ministral-3b-2512"}
+{"timestamp": "2026-08-05T16:18:53.749270", "case_id": "EC_049", "step": "policy_evaluation_started", "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:18:54.102964", "case_id": "EC_050", "step": "policy_evaluated", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:18:54.102983", "case_id": "EC_050", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:19:04.228399", "case_id": "EC_049", "step": "policy_evaluated", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0, "model": "ministral-8b-2512"}
+{"timestamp": "2026-08-05T16:19:04.228418", "case_id": "EC_049", "step": "verifier_started", "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:19:21.239214", "case_id": "EC_048", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:19:21.239231", "case_id": "EC_048", "step": "investigation_completed", "primary_issue": "late_delivery_seller", "case_status": "action_required", "recommended_refund_brl": 49.74}
+{"timestamp": "2026-08-05T16:19:45.241356", "case_id": "EC_050", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:19:45.241370", "case_id": "EC_050", "step": "investigation_completed", "primary_issue": "unsupported_late_claim", "case_status": "no_action", "recommended_refund_brl": 0.0}
+{"timestamp": "2026-08-05T16:19:48.641006", "case_id": "EC_049", "step": "verifier_completed", "verified": true, "model": "meta/llama-3.2-3b-instruct"}
+{"timestamp": "2026-08-05T16:19:48.641016", "case_id": "EC_049", "step": "investigation_completed", "primary_issue": "valid_split_payment", "case_status": "no_action", "recommended_refund_brl": 0.0}
