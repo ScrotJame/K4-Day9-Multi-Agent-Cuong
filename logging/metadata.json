@@ -1,0 +1,15 @@
+{
+  "model_name": "ministral-8b-2512, ministral-3b-2512, meta/llama-3.2-3b-instruct",
+  "parameter_size": "<= 10B",
+  "framework": "Multi-Agent System (Python / Concurrent Execution)",
+  "runtime": "Python 3.13",
+  "agents": {
+    "coordinator_agent": "ministral-8b-2512",
+    "policy_agent": "ministral-8b-2512",
+    "customer_agent": "ministral-3b-2512",
+    "order_product_agent": "ministral-3b-2512",
+    "delivery_agent": "ministral-3b-2512",
+    "payment_agent": "ministral-3b-2512",
+    "verifier_agent": "meta/llama-3.2-3b-instruct"
+  }
+}

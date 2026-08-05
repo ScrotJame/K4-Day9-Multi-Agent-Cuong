@@ -1,0 +1,12 @@
+.env
+*.env
+__pycache__/
+src/__init__.py
+input/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+output/
+output.zip
+test_single.py
