@@ -49,6 +49,7 @@ def process_single_case(fname: str, olist: OlistData, trace: TraceLogger, lock: 
 
 
 def create_submission_zip():
+    """Tạo file output.zip chứa cả đường dẫn flat (EC_xxx.json) lẫn folder (output/EC_xxx.json) để đảm bảo 100% tương thích autograder."""
     zip_path = os.path.join(config.BASE_DIR, "output.zip")
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zipf:
         output_files = sorted([
@@ -57,8 +58,12 @@ def create_submission_zip():
         ])
         for fname in output_files:
             file_path = os.path.join(config.OUTPUT_DIR, fname)
+            # Thêm đường dẫn flat: EC_001.json
             zipf.write(file_path, arcname=fname)
-    print(f"[zip] Đã tạo file submission: {zip_path} (chứa {len(output_files)} files)")
+            # Thêm đường dẫn output/EC_001.json
+            zipf.write(file_path, arcname=f"output/{fname}")
+
+    print(f"[zip] Created submission zip: {zip_path} (contains {len(output_files)} cases in both flat & output/ paths)")
 
 
 def main():
@@ -66,18 +71,18 @@ def main():
         print("[error] Chưa set MISTRAL_API_KEY trong .env")
         sys.exit(1)
 
-    print("[info] Đang load dữ liệu Olist...")
+    print("[info] Loading Olist data...")
     olist = OlistData()
-    print("[info] Load xong.")
+    print("[info] Data loaded.")
 
     input_files = sorted([
         f for f in os.listdir(config.INPUT_DIR)
         if f.startswith("EC_") and f.endswith(".json")
     ])
-    print(f"[info] Bắt đầu chạy song song {len(input_files)} cases...")
+    print(f"[info] Processing {len(input_files)} cases...")
 
     if not input_files:
-        print("[error] Không tìm thấy file EC_xxx.json trong input/")
+        print("[error] No EC_xxx.json files in input/")
         sys.exit(1)
 
     os.makedirs(config.OUTPUT_DIR, exist_ok=True)
@@ -101,7 +106,7 @@ def main():
     # Nén output.zip
     create_submission_zip()
 
-    print(f"\n[done] Đã hoàn tất 50 cases! Output saved to {config.OUTPUT_DIR}")
+    print(f"\n[done] Completed 50 cases! Output saved to {config.OUTPUT_DIR}")
 
 
 def _write_trace(path: str, trace: TraceLogger):

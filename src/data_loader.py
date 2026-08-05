@@ -2,7 +2,7 @@
 Load và truy vấn dữ liệu Olist cho từng order_id.
 
 Thiết kế: load 1 lần vào RAM (dataset Olist ~100k order, đủ nhỏ), sau đó mỗi
-case chỉ cần filter theo order_id / customer_unique_id — không query DB.
+case chỉ cần filter theo order_id / customer_unique_id.
 """
 
 import os
@@ -41,12 +41,9 @@ class OlistData:
         path = os.path.join(data_dir, config.FILES[key])
         if not os.path.exists(path):
             raise FileNotFoundError(
-                f"Không tìm thấy file '{config.FILES[key]}' trong {data_dir}. "
-                f"Tải bộ Olist trên Kaggle và đặt đúng tên file gốc."
+                f"Không tìm thấy file '{config.FILES[key]}' trong {data_dir}."
             )
         return pd.read_csv(path)
-
-    # ---- Truy vấn theo domain ----
 
     def get_order_core(self, order_id: str) -> dict:
         """Trạng thái đơn + các mốc thời gian."""
@@ -66,43 +63,41 @@ class OlistData:
         }
 
     def get_items(self, order_id: str) -> list:
-        """Item, seller, shipping_limit_date, price, freight — bao gồm order_item_id."""
+        """Item, seller, shipping_limit_date, price, freight, category_name."""
         items = self.order_items[self.order_items["order_id"] == order_id]
         out = []
         for _, it in items.iterrows():
-            prod = self.products[self.products["product_id"] == it["product_id"]]
+            pid = it.get("product_id")
+            prod = self.products[self.products["product_id"] == pid]
             cat = None
             if not prod.empty:
-                cat_pt = prod.iloc[0].get("product_category_name")
-                if cat_pt and not pd.isna(cat_pt):
-                    t = self.category_translation[
-                        self.category_translation["product_category_name"] == cat_pt
-                    ]
-                    cat = t.iloc[0]["product_category_name_english"] if not t.empty else cat_pt
+                c = prod.iloc[0].get("product_category_name")
+                if c and not pd.isna(c):
+                    cat = str(c)
 
             out.append({
                 "order_item_id": int(it.get("order_item_id", 0)),
-                "product_id": it.get("product_id"),
+                "product_id": pid,
                 "seller_id": it.get("seller_id"),
-                "price": float(it.get("price", 0) or 0),
-                "freight_value": float(it.get("freight_value", 0) or 0),
+                "price": round(float(it.get("price", 0) or 0), 2),
+                "freight_value": round(float(it.get("freight_value", 0) or 0), 2),
                 "shipping_limit_date": self._fmt(it.get("shipping_limit_date")),
                 "category_name": cat,
             })
         return out
 
     def get_payments(self, order_id: str) -> list:
-        """Payment rows — bao gồm payment_sequential."""
+        """Payment rows với payment_sequential."""
         pays = self.order_payments[self.order_payments["order_id"] == order_id]
         return [{
             "payment_sequential": int(p.get("payment_sequential", 0)),
-            "payment_type": p.get("payment_type"),
+            "payment_type": str(p.get("payment_type")),
             "payment_installments": int(p.get("payment_installments", 0) or 0),
-            "payment_value": float(p.get("payment_value", 0) or 0),
+            "payment_value": round(float(p.get("payment_value", 0) or 0), 2),
         } for _, p in pays.iterrows()]
 
     def get_customer_context(self, order_id: str) -> dict:
-        """Customer unique ID + related orders (excluding current)."""
+        """Customer unique ID + related orders (loại trừ order hiện tại)."""
         order_row = self.orders[self.orders["order_id"] == order_id]
         if order_row.empty:
             return {"customer_unique_id": None, "related_order_ids": []}
@@ -112,9 +107,8 @@ class OlistData:
         if cust_row.empty:
             return {"customer_unique_id": None, "related_order_ids": []}
 
-        unique_id = cust_row.iloc[0]["customer_unique_id"]
+        unique_id = str(cust_row.iloc[0]["customer_unique_id"])
 
-        # Tất cả customer_id thuộc cùng 1 người
         all_cust_ids = self.customers[
             self.customers["customer_unique_id"] == unique_id
         ]["customer_id"].tolist()
@@ -123,7 +117,6 @@ class OlistData:
             self.orders["customer_id"].isin(all_cust_ids)
         ]["order_id"].tolist()
 
-        # Loại bỏ order hiện tại
         related = [oid for oid in all_orders if oid != order_id]
 
         return {
@@ -142,11 +135,9 @@ class OlistData:
 
     @staticmethod
     def _fmt(val):
-        """Format timestamp to YYYY-MM-DD HH:MM:SS or None."""
         if val is None or pd.isna(val):
             return None
         s = str(val)
-        # pandas datetime → string: '2018-03-31 15:23:33'
         if "." in s:
             s = s.split(".")[0]
         return s
