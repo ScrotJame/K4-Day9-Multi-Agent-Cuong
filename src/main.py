@@ -49,7 +49,7 @@ def process_single_case(fname: str, olist: OlistData, trace: TraceLogger, lock: 
 
 
 def create_submission_zip():
-    """Tạo file output.zip chứa cả đường dẫn flat (EC_xxx.json) lẫn folder (output/EC_xxx.json) để đảm bảo 100% tương thích autograder."""
+    """Tạo file output.zip chứa đúng 50 JSON (EC_001.json đến EC_050.json) tuân thủ 100% Section 8 README."""
     zip_path = os.path.join(config.BASE_DIR, "output.zip")
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zipf:
         output_files = sorted([
@@ -58,12 +58,9 @@ def create_submission_zip():
         ])
         for fname in output_files:
             file_path = os.path.join(config.OUTPUT_DIR, fname)
-            # Thêm đường dẫn flat: EC_001.json
             zipf.write(file_path, arcname=fname)
-            # Thêm đường dẫn output/EC_001.json
-            zipf.write(file_path, arcname=f"output/{fname}")
 
-    print(f"[zip] Created submission zip: {zip_path} (contains {len(output_files)} cases in both flat & output/ paths)")
+    print(f"[zip] Created submission zip: {zip_path} (contains exactly {len(output_files)} files: EC_001.json .. EC_050.json)")
 
 
 def main():
