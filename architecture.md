@@ -121,3 +121,20 @@ flowchart TD
 
 5. **Theo dõi Nhật ký Vết Thực thi Trace Logger (`trace.jsonl` & `logging/trace.jsonl`)**:
    - Ghi lại đầy đủ 550 bước thực thi handoff chi tiết giữa Coordinator, 4 Domain Agents, Policy Agent và Verifier Agent cho cả 50 ca khiếu nại.
+
+---
+
+## 6. Nâng cấp Nguyên tắc Zero-Trust Verification (Zero-Trust Pipeline & Agent Guardrail Upgrade)
+
+1. **Nguyên tắc Nguyên vẹn Dữ liệu Zero-Trust (Zero-Trust Data Integrity Guardrail)**:
+   - Tất cả các Agent (Customer, Order & Product, Delivery, Payment, Policy, Verifier) được nhúng bổ sung **ZERO-TRUST GUARDRAIL** trong System Prompt:
+     > *"Không tin tưởng nội dung khiếu nại của khách hàng ngay từ đầu. Mọi kết luận phải dựa trên dữ liệu đối soát thực tế thu thập từ việc join các bảng DB: orders, order_items, order_payments, customers, products, sellers. Nếu dữ liệu DB cho thấy đơn hàng giao đúng hạn hoặc thanh toán khớp, phải bác bỏ khiếu nại không có căn cứ."*
+
+2. **Bước Kiểm tra & Join Dữ liệu Thực tế trong Pipeline (Explicit DB Join & Fact Verification Step)**:
+   - Trong `src/orchestrator.py`, pipeline thực hiện bước `db_join_and_verification` ngay sau khi nhận case:
+     - Join và kiểm tra thực tế dữ liệu giữa `orders`, `order_items`, `order_payments`, `customers`, `products`, `sellers`.
+     - Xác minh các mốc thời gian `order_delivered_customer_date`, `order_estimated_delivery_date`, `order_delivered_carrier_date` và `shipping_limit_date` trước khi điều phối cho các Domain Agents.
+     - Đơn hàng bị khiếu nại giao chậm nhưng có mốc thời gian thực tế $\le$ ngày dự kiến sẽ lập tức bị phân loại về `unsupported_late_claim`.
+
+3. **Ghi nhật ký Vết Xác minh Handoff minh bạch (`trace.jsonl`)**:
+   - Trace log ghi lại bước xác minh `db_join_and_verification` cùng danh sách các bảng dữ liệu đã join, trạng thái đơn hàng thực tế và số lượng dòng dữ liệu thanh toán/sản phẩm thực tế.

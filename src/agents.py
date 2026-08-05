@@ -1,12 +1,22 @@
 """
-6 Domain Agents + 1 Verifier Agent — mỗi agent phân tích domain riêng
-kết hợp LLM và Python rule calculation chính xác 100%.
+6 Domain Agents + 1 Verifier Agent với Zero-Trust Guardrail.
+
+Quy tắc cốt lõi: ZERO-TRUST
+  Không tin tưởng nội dung khiếu nại của khách hàng ngay từ đầu.
+  Mọi kết luận phải dựa trên dữ liệu đối soát thực tế thu thập từ việc join các bảng DB:
+  orders, order_items, order_payments, customers, products, sellers.
 """
 
 import json
 from datetime import datetime
 from . import config
 from .llm_client import call_mistral, call_nvidia
+
+ZERO_TRUST_GUARDRAIL = (
+    "ZERO-TRUST GUARDRAIL: Không tin tưởng thông điệp khiếu nại của khách hàng ngay từ đầu. "
+    "Mọi kết luận phải dựa trên dữ liệu đối soát thực tế được join từ các bảng DB Olist. "
+    "Nếu dữ liệu DB cho thấy đơn hàng giao đúng hạn hoặc thanh toán khớp, phải bác bỏ khiếu nại không có căn cứ."
+)
 
 
 # ═══════════════════════════════════════════════════════════════════
@@ -21,20 +31,20 @@ def customer_agent(order_id: str, case_data: dict) -> dict:
 
     system = (
         "Bạn là Customer Agent trong hệ thống multi-agent điều tra khiếu nại TMĐT. "
-        "Nhiệm vụ: phân tích lịch sử khách hàng và xác định repeat customer status. "
+        f"{ZERO_TRUST_GUARDRAIL} "
+        "Nhiệm vụ: Phân tích lịch sử mua hàng thực tế từ DB để xác định repeat customer status. "
         "Trả lời bằng JSON."
     )
     user = f"""
 Phân tích khách hàng cho order {order_id}:
 - customer_unique_id: {customer_unique_id}
-- Số order khác của khách: {len(related_order_ids)}
+- Số order khác của khách trong DB: {len(related_order_ids)}
 - Related order IDs: {related_order_ids[:5]}
 
 Trả về JSON:
-{{"finding": "repeat_customer" hoặc "first_time_customer", "analysis": "giải thích ngắn"}}
+{{"finding": "repeat_customer" hoặc "first_time_customer", "analysis": "giải thích dựa trên DB facts"}}
 """
     llm_resp = call_mistral(config.CUSTOMER_AGENT_MODEL, system, user)
-
     finding = "repeat_customer" if is_repeat else "first_time_customer"
 
     return {
@@ -68,18 +78,20 @@ def order_product_agent(order_id: str, case_data: dict) -> dict:
 
     system = (
         "Bạn là Order & Product Agent trong hệ thống multi-agent điều tra khiếu nại TMĐT. "
-        "Nhiệm vụ: phân tích đơn hàng, sản phẩm và seller. Trả lời bằng JSON."
+        f"{ZERO_TRUST_GUARDRAIL} "
+        "Nhiệm vụ: Phân tích thực tế đơn hàng, sản phẩm và seller từ DB đã join. "
+        "Trả lời bằng JSON."
     )
     user = f"""
-Phân tích đơn hàng {order_id}:
-- Số items: {len(items)}
-- Số sellers: {len(seller_ids)}
+Đối soát đơn hàng {order_id} từ DB:
+- Số items trong DB: {len(items)}
+- Số sellers trong DB: {len(seller_ids)}
 - Seller IDs: {seller_ids[:3]}
 - Số categories: {len(category_names)}
 - Categories: {category_names[:5]}
 
 Trả về JSON:
-{{"finding": "mô tả ngắn", "flags": ["multi_item_order", "multi_seller_order", "multiple_categories"]}}
+{{"finding": "mô tả thực tế đơn hàng", "flags": ["multi_item_order", "multi_seller_order", "multiple_categories"]}}
 """
     llm_resp = call_mistral(config.ORDER_PRODUCT_AGENT_MODEL, system, user)
 
@@ -167,20 +179,21 @@ def delivery_agent(order_id: str, case_data: dict) -> dict:
 
     system = (
         "Bạn là Delivery Agent trong hệ thống multi-agent điều tra khiếu nại TMĐT. "
-        "Nhiệm vụ: phân tích thời gian giao hàng, xác định bên chịu trách nhiệm nếu trễ. "
+        f"{ZERO_TRUST_GUARDRAIL} "
+        "Nhiệm vụ: Phân tích mốc thời gian giao hàng thực tế từ DB để xác định trễ hạn. "
         "Trả lời bằng JSON."
     )
     user = f"""
-Phân tích delivery cho order {order_id}:
-- Order status: {order_core.get("order_status")}
+Đối soát giao vận thực tế cho order {order_id}:
+- Order status trong DB: {order_core.get("order_status")}
 - Delivered at: {delivered_at}
 - Estimated delivery: {estimated_at}
 - Carrier handoff: {carrier_handoff_at}
 - Delivery variance (hours): {delivery_variance_hours}
-- Is late: {is_late}
+- Is late based on DB timestamp: {is_late}
 
 Trả về JSON:
-{{"finding": "on_time" | "seller_delay" | "carrier_delay", "analysis": "giải thích"}}
+{{"finding": "on_time" | "seller_delay" | "carrier_delay", "analysis": "giải thích dựa trên timestamp facts"}}
 """
     llm_resp = call_mistral(config.DELIVERY_AGENT_MODEL, system, user)
 
@@ -239,10 +252,12 @@ def payment_agent(order_id: str, case_data: dict) -> dict:
 
     system = (
         "Bạn là Payment Agent trong hệ thống multi-agent điều tra khiếu nại TMĐT. "
-        "Nhiệm vụ: đối soát payment với giá trị đơn hàng. Trả lời bằng JSON."
+        f"{ZERO_TRUST_GUARDRAIL} "
+        "Nhiệm vụ: Đối soát dòng tiền thanh toán thực tế với giá trị đơn hàng trong DB. "
+        "Trả lời bằng JSON."
     )
     user = f"""
-Đối soát payment cho order {order_id}:
+Đối soát payment thực tế cho order {order_id}:
 - Item total: {item_total} BRL
 - Freight total: {freight_total} BRL
 - Expected total: {expected_total} BRL
@@ -251,7 +266,7 @@ def payment_agent(order_id: str, case_data: dict) -> dict:
 - Reconciled: {reconciled}
 
 Trả về JSON:
-{{"finding": "reconciled" | "mismatch", "analysis": "giải thích"}}
+{{"finding": "reconciled" | "mismatch", "analysis": "giải thích dựa trên số liệu thực tế"}}
 """
     llm_resp = call_mistral(config.PAYMENT_AGENT_MODEL, system, user)
 
@@ -274,7 +289,7 @@ Trả về JSON:
 
 
 # ═══════════════════════════════════════════════════════════════════
-# Agent 5: Policy Agent — áp dụng EC_POLICY_V2
+# Agent 5: Policy Agent — áp dụng EC_POLICY_V2 với Zero-Trust
 # ═══════════════════════════════════════════════════════════════════
 
 def policy_agent(order_id: str, case_data: dict, agent_results: dict) -> dict:
@@ -393,7 +408,9 @@ def policy_agent(order_id: str, case_data: dict, agent_results: dict) -> dict:
 
     system = (
         "Bạn là Policy Agent trong hệ thống multi-agent điều tra khiếu nại TMĐT. "
-        "Nhiệm vụ: xác nhận policy decision. Trả lời bằng JSON."
+        f"{ZERO_TRUST_GUARDRAIL} "
+        "Nhiệm vụ: Áp dụng EC_POLICY_V2 dựa trên bằng chứng DB thực tế và xác nhận quyết định. "
+        "Trả lời bằng JSON."
     )
     user = f"""
 Policy decision cho order {order_id}:
@@ -438,7 +455,10 @@ Trả về JSON:
 
 def verifier_agent(output: dict) -> dict:
     system = (
-        "Bạn là Verifier Agent. Kiểm tra output JSON điều tra khiếu nại TMĐT. Trả lời bằng JSON."
+        "Bạn là Verifier Agent. Kiểm tra output JSON điều tra khiếu nại TMĐT. "
+        f"{ZERO_TRUST_GUARDRAIL} "
+        "Xác minh toàn bộ ID, mốc thời gian, số tiền và bằng chứng trước khi xuất output. "
+        "Trả lời bằng JSON."
     )
     user = f"""
 Kiểm tra output:
